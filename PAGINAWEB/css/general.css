@@ -1,0 +1,184 @@
+html,body{
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body {
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1px;
+    font-family: Product-Sans-Regular, sans-serif;
+}
+a:-webkit-any-link{
+    cursor:pointer;
+}
+ul{
+    margin-top: 0px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+li{
+    display:list-item;
+    text-align: -webkit-match-parent;
+}
+
+
+iframe{
+    width: 420px;
+    height: 250px;
+    float:center;
+}
+#container{
+    position: auto;
+    width:100%;
+    background-color: rgb(255, 255, 255);
+    height: 950px;
+    float: center;
+}
+.container-top{
+    height: 10%;
+    width: 100%;
+    border-bottom: 1px solid;
+    border-color: #dee2e6;
+    float:center;
+}
+.divLogo{
+    margin-left: 1%;
+    float: left;
+    width:230px;
+    border-right: 1px solid #dee2e6;
+    float:left;
+}
+.divLogo img{
+    margin-left:10%;
+    width: 80%;
+    float: left;
+}
+.divTexto {
+    padding-top:1.5%;
+    margin-left: 350px;
+    text-align: center;
+    float: left;
+    width:40%;
+}
+.divBotones{
+    float: right;
+    width: 15%;
+    height:100%;
+    margin-left: 12%;
+}
+.textoheader{
+    font-family: Product-Sans-Regular, sans-serif;
+    color: #6b6b6b;
+    float: relative;
+    font-size: 40px;
+    position: relative;
+}
+.textoheaderAzul{
+    color: #00a7f5;
+}
+.textoheaderRojo{
+    color: #940000;
+}
+.textoheaderVerde{
+    color: #1dbe00;
+}
+.textoheaderAmarillo{
+    color: #ffd900;
+}
+
+.boton{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top:0px;
+    padding-left: 0px;
+    margin-bottom: 0px;
+    list-style: none;
+    font-family: Product-Sans-Regular, sans-serif;
+    font-size: 20px;
+    border-bottom: 1px solid #dee2e6;
+}
+.botonesLoginRegister{
+    padding-top: 20px;
+    border-bottom: 0px;
+}
+.spanClases{
+    font-size: 15px;
+}
+.link{
+    display: block;
+    padding: 0.5rem 1rem;
+    padding-top: 0px;
+    color: cornflowerblue;
+    text-decoration: none;
+    transition: color .15s ease -in-out, 
+                background-color .15s ease -in-out, 
+                border-color .15s ease -in-out;
+}
+.cuerpo{
+    float:left;
+    border-top: 0px;
+    height: 80%;
+    width:100%;
+}
+.bottom{
+    float:center;
+    border-top: 1px solid #dee2e6;
+}
+.clases{
+    width: 249px;
+    height:100%;
+    border-right: 1px solid #dee2e6;
+    padding-bottom: 10px;
+    margin-right: 0px;
+    padding-right: 0px;
+    float: left;
+}
+.contenido{
+    width: 350px;
+    height: 100%;
+    margin-left: 0px;
+    margin-left: 300px;;
+    float: left;
+}
+.divImgAsignatura img{
+    width:850px;
+    height:300px;
+}
+
+.marco{
+    border: 1px solid #afb1b3;
+    border-radius: 20px;
+    width:420px;
+    height:60px;
+    float: left;
+}
+.iconoMarco{
+    margin-left: 14px;
+}
+.iconoMarco img{
+    width:50px;
+    height:50px;
+    float:left;
+}
+.iconoMarcoProfesor img{
+    margin-top:5px;
+    width:80px;
+    height:50px;
+    float:left;
+}
+.enunciadoActividad{
+    margin-top:10px;
+}
+.divTextoAsignatura{
+    text-align: center;
+
+}
+.tablaActividades{
+    float:left;
+}
