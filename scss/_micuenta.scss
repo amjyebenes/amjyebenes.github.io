@@ -1,0 +1,29 @@
+.iconoCuentaBlanco{
+    color: white !important;
+}
+
+.iconoCuenta {
+    color: $primary;
+}
+
+.iconoCuentaSelected{
+    // color:white;
+    background-color: $primary !important;
+}
+
+#botonDatos, #botonCompras {
+    background-color: $light;
+}
+
+.textoNaranja{
+    color:$primary;
+}
+
+.ocultarDiv{
+    display: none;
+}
+
+.fondoBlanco{
+    background-color:white;
+}
+

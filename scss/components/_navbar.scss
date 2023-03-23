@@ -1,0 +1,250 @@
+// 
+// Navbar
+// 
+
+.menu {
+    height: 65vh;
+}
+
+.navbar {
+    z-index: 20;
+}
+
+.navbar.active {
+    backdrop-filter: blur(5px);
+    background: $mynavbg;
+}
+
+.nav-line {
+    height: 1px !important;
+    margin-top: $navbar-padding-y;
+}
+
+.collapse {
+    z-index: 20;
+    background: $my-mobile-nav-bg;
+    backdrop-filter: blur(5px);
+
+    div.collapsing {
+        height: auto !important;
+        overflow: auto !important;
+        opacity: 0;
+        transform: translate(0,0) !important;
+    }
+    
+    div.collapse:not(.show) {
+        display: flex !important;
+        transform: translate(-100%, 0) !important;
+        opacity: 0;
+    }
+
+    div.show {
+        transform: translate(0,0) !important;
+        opacity: 1;
+    }
+
+    div.nav-line {
+        margin: 0;
+    }
+
+    a.nav-link a.dropdown-item {
+        color: $dark;
+
+        &:hover {
+            color: $secondary;
+        }
+
+        &:active,
+        &:focus {
+            color: $dark;
+        }
+
+        &.active {
+            color: $secondary;
+        }
+    }
+}
+
+.collapsing {
+    background: $my-mobile-nav-bg !important;
+    backdrop-filter: blur(5px) !important;
+}
+
+.main-title {
+    bottom: 10%;
+    transform: translate(-50%, 0);
+    z-index: 1;
+}
+
+.intro-img {
+    bottom: 35vh;
+    transform: translateY(0px);
+}
+
+.brand-title {
+    font-size: 2rem;
+    mix-blend-mode: difference;
+    letter-spacing: .8rem;
+    transform-origin: bottom center;
+    transform: perspective(1000px) scaleY(1.5) rotateX(20deg);
+    filter: sepia(1);
+}
+
+.from {
+    font-size: .8rem;
+}
+
+.mainNav {
+
+    .navbar-brand {
+        color: $dark;
+    }
+    .navbar-botones{
+        font-family: $textonormal;
+    }
+
+    .navbar-nav {
+        li.nav-item {
+            a.nav-link a.dropdown-item {
+                color: $dark;
+
+                &:hover {
+                    color: $secondary;
+                }
+
+                &:active,
+                &:focus {
+                    color: $dark;
+                }
+
+                &.active {
+                    color: $secondary;
+                }
+            }
+            div.dropdown-menu{
+                a.dropdown-item{
+                    &:hover {
+                        background-color: $secondary;
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar-toggler {
+        width: 2rem;
+        gap: 0.65rem;
+
+        > div {
+            height: 1px;
+            transition: all .5s;
+            transform-origin: left;
+            opacity: 1;
+        }
+    }
+
+    .logo-mobile {
+        width: 20%;
+    }
+
+    .nav-item img {
+        max-width: 50px !important;
+        height: 50px !important;
+    }
+}
+
+.dropdown-toggle {
+    position: relative;
+}
+  
+.dropdown-toggle::after {
+    // position: absolute;
+    // right: 5px;
+    // bottom: 45%;
+}
+
+
+.dropdown {
+    .btn, .show  {
+        &:hover {
+            background-color: $secondary;
+            border-color: $secondary;
+        }
+    }
+
+    .show {
+        background-color: $secondary;
+        border-color: $secondary; 
+    }
+
+    .dropdown-item {
+        &:hover {
+            background-color: $light;
+        }
+    }
+
+    &::after {
+        border-color: $dark !important;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .collapse {
+        backdrop-filter: none;
+        background: none;
+    }
+}
+
+// NAVBAR EN MÓVIL
+@include media-breakpoint-down(lg) {
+    .navbar.active {
+        background: $my-mobile-nav-bg;
+    }
+
+    .nav-link {
+        border-bottom: 0.5px solid $dark;
+
+        &:hover {
+            color: $secondary;
+        }
+    }
+
+    .intro-img {
+        width: auto;
+        max-width: none;
+    }
+
+    .main-title {
+        transform: translate(-50% , -50%);
+    }
+
+    .home-heading {
+        height: 40vh;
+    }
+
+    .from {
+        font-size: .5rem !important;
+    }
+
+    .brand-title {
+        transform: perspective(1000px) scale(.8,1) rotateX(20deg) !important;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .navbar.active {
+        background: $my-mobile-nav-bg;
+    }
+
+    .navbar-collapse {
+        height: 100% !important;
+    }
+
+    .menu {
+        height: 40vh;
+    }
+
+    .home-nav {
+        z-index: 20;
+    }
+}

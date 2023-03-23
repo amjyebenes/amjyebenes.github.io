@@ -1,0 +1,44 @@
+// 
+// Global
+// 
+
+// Scroll padding for all scroll targets on page used with
+// native CSS smooth scrolling
+// 
+// https://caniuse.com/?search=scroll-padding
+
+html {
+    height: 100%;
+    scroll-padding-top: calc(#{$navbar-height} - 1px); 
+}
+
+main {
+    min-height: 80vh;
+}
+
+// Styling for page sections
+.page-section {
+    z-index: 10;
+}
+
+// Clases globales de los espaciados
+.device-padding {
+    padding-right: $paddingLateral;
+    padding-left: $paddingLateral;
+}
+
+.section-padding {
+    padding-top: $paddingVertical;
+    padding-bottom: $paddingVertical;
+}
+
+.btn-primary {
+    &:hover {
+        background-color: $secondary !important;
+        border-color: $secondary !important;
+    }
+}
+
+.sr-only {
+    display: none;
+}

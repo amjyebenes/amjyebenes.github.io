@@ -1,0 +1,113 @@
+// 
+// Index
+// 
+
+// Sección Evento
+.concert {
+
+    path {
+        pointer-events: none;
+    }
+
+    .img-con {
+        position: relative;
+        transform-origin: top center;
+        height: 100%;
+    }
+
+    #cruzziConcierto {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .video-mark {
+        transform: translate(-50%, -50%);
+        mix-blend-mode: overlay;
+    }
+
+    &:hover {
+        cursor: default;
+    }
+
+    .rating {
+        label {
+            cursor: pointer;
+            vertical-align: middle;
+        }
+    
+        label.reset {
+            font-size: 10px;
+            border: 1px solid #000;
+            border-radius: 5px;
+            margin: 10px 5px;
+            padding: 2px 3px;
+        }
+    
+        label.star {
+            width: 30px;
+            height: 27px;
+        }
+    
+        /* estrellas inmediatamente despues de un radiobutton van amarillas */
+        input[type=radio]+label.star svg path {
+            fill: $primary;
+        }
+    
+        /* estrellas a la derecha del radiobutton checked van blanco */
+        input[type=radio]:checked~label.star svg path {
+            fill: #bababa;
+        }
+    }
+
+    .star2 {
+        width: 20px;
+        height: 17px;
+    }
+
+    #standalone-container {
+        // Text editor
+    }
+    #editor-container {
+        min-height: 100px;
+    }
+}
+
+.concierto-hov {
+    transform: perspective(1000px) rotateX(0) rotateY(0);
+    transition: .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    filter: grayscale(.4);
+    &:hover {
+        transform: perspective(1000px) rotateX(20deg) rotateY(5deg);
+        transition: .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        filter: grayscale(0);
+    }
+}
+
+// Para que el nav no se coma la primera sección
+.fix-top {
+    margin-top: 10vh;
+    padding-bottom: 6vh;
+    max-height: max-content;
+}
+
+@include media-breakpoint-down(md) {
+    .fix-top {
+        margin-top: 0 !important;
+    }
+
+    .img-con {
+        height: 40vh !important;
+        max-height: 40vh !important;
+    }
+
+    .conciertos-item-img {
+        transform: translateY(-30vh);
+    }
+}
+
+// Separador
+.b-line {
+    height: 1px;
+}

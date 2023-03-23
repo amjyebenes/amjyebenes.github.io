@@ -1,0 +1,28 @@
+// 
+// Colors
+// 
+
+//- Variables propias
+$mynavbg: rgb(248, 248, 248);
+$my-mobile-nav-bg: rgba(255, 255, 255, 0.831);
+//$primario: #FF6701;
+$primario: #ff5101;
+$secundario: #ff9d14;
+
+//- Override bootstrap colors
+$primary: darken($primario, 10%);
+// $primary: #FF6701;
+// $primary: #B84900;
+// $secondary: #FEA82F;
+$secondary: darken($secundario,10%);
+$info: #fff9f5;
+$light: #ffffff;
+$dark: #291F1F;
+$body-bg: $light;
+$nav-link-color: black;
+$link-color: $dark;
+$link-hover-color: $secondary;
+$nav-link-hover-color: $secondary;
+$link-decoration: none;
+
+$min-contrast-ratio: 2.4;

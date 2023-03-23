@@ -1,0 +1,44 @@
+// 
+// Typography
+// 
+
+@import './fonts'; 
+
+$textonormal: "Reem Kufi",
+"Lato",
+-apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+"Helvetica Neue",
+Arial,
+"Noto Sans",
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol",
+'Noto Color Emoji';
+
+$titulo: "Newake",
+-apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+"Helvetica Neue",
+Arial,
+"Noto Sans",
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol",
+'Noto Color Emoji';
+
+$font-size-base: 1rem;
+$font-size-lg: $font-size-base * 1.75;
+$nav-link-font-size: $font-size-base + .5;
+// Fuente de títulos
+$headings-font-family: $titulo;
+$headings-font-weight: 500;
+// Fuente de párrafos
+$font-family-base: $textonormal;
+$font-weight-base: normal;
